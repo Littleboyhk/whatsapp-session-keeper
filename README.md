@@ -68,16 +68,11 @@ cd whatsapp-session-keeper
 
 npm install
 
-
-
 ### Create a .env file (never commit it!):
 
 TELEGRAM_TOKEN=your_bot_token
-
 TELEGRAM_CHAT_ID=your_chat_id
-
 Run locally:
-
 npm start
 
 ### 3. Deploy to Railway
@@ -88,7 +83,7 @@ npm start
 4.Add a Volume: Mount path /data (1 GB) to persist the WhatsApp session.
 5.Add Environment Variables:
 
-Variable	          Description
+### Variable	          Description
 
 TELEGRAM_TOKEN	    Your Telegram Bot token
 TELEGRAM_CHAT_ID	Your personal Telegram chat ID
@@ -98,34 +93,30 @@ TELEGRAM_CHAT_ID	Your personal Telegram chat ID
 7.Scan the QR with WhatsApp (Linked Devices) – you'll receive a success message when connected.
 
 
-🤔 How It Works
+### 🤔 How It Works
 
 
 1.The bot launches a headless Chromium instance and navigates to WhatsApp Web.
-
 2.A QR code is generated and sent to your Telegram chat as a PNG image.
-
 3.After scanning, the session is saved to /data/session (persistent volume).
-
 4.If the session expires or disconnects, the bot automatically re‑authenticates using the saved session.
-
 5.A new QR is only sent if the saved session is invalid.
 
-⚙️ Environment Variables
+### ⚙️ Environment Variables
 
-Variable	      Required	   Description
+### Variable	      Required	   Description
 
 TELEGRAM_TOKEN	    Yes  	Token from BotFather
 TELEGRAM_CHAT_ID	Yes	    Your Telegram user ID
 CHROME_BIN	        No	    Path to Chromium (defaults to /usr/bin/chromium)
 
 
-🔧 Customization
+### 🔧 Customization
 QR Refresh Interval: Change QR_TIMEOUT_MS in index.js (default 30 seconds).
 
 Success Message: Edit the successMsg string inside the ready event.
 
-⚠️ Important Notes
+### ⚠️ Important Notes
 Educational Use Only – This project is for learning purposes. Automating personal WhatsApp accounts may violate WhatsApp's Terms of Service.
 
 Session Security – The .wwebjs_auth folder contains sensitive tokens. It is excluded from Git and stored only on your private volume.
@@ -134,17 +125,17 @@ Telegram Privacy – Keep your TELEGRAM_TOKEN and CHAT_ID secret. Use Railway en
 
 Indian Regulations (2026) – The mandatory 6‑hour logout rule has been removed, making long‑lived sessions easier. SIM‑binding compliance is still expected by December 2026.
 
-📜 License
+### 📜 License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-🙏 Acknowledgements
+### 🙏 Acknowledgements
 
 pedroslopez/whatsapp-web.js
 Railway
 Telegram Bot API
 
-7. LICENSE (MIT)
+### 7. LICENSE (MIT)
 
 MIT License
 
