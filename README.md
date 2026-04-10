@@ -71,7 +71,7 @@ npm install
 
 
 
-Create a .env file (never commit it!):
+### Create a .env file (never commit it!):
 
 TELEGRAM_TOKEN=your_bot_token
 
@@ -81,7 +81,7 @@ Run locally:
 
 npm start
 
-3. Deploy to Railway
+### 3. Deploy to Railway
 
 1.Push this repository to GitHub.
 2.On Railway, create a New Project → Deploy from GitHub repo.
