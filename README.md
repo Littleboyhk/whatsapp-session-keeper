@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📱 WhatsApp Web Session Keeper
 
 [![Node.js](https://img.shields.io/badge/Node.js-22.x-green.svg)](https://nodejs.org/)
@@ -64,7 +64,9 @@
 
 ```bash
 git clone https://github.com/yourusername/whatsapp-session-keeper.git
+
 cd whatsapp-session-keeper
+
 npm install
 
 
@@ -134,13 +136,13 @@ Telegram Privacy – Keep your TELEGRAM_TOKEN and CHAT_ID secret. Use Railway en
 Indian Regulations (2026) – The mandatory 6‑hour logout rule has been removed, making long‑lived sessions easier. SIM‑binding compliance is still expected by December 2026.
 
 📜 License
+
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 🙏 Acknowledgements
+
 pedroslopez/whatsapp-web.js
-
 Railway
-
 Telegram Bot API
 
 7. LICENSE (MIT)
