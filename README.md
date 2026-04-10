@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📱 WhatsApp Web Session Keeper
 
 [![Node.js](https://img.shields.io/badge/Node.js-22.x-green.svg)](https://nodejs.org/)
@@ -30,10 +31,15 @@
 ## 📁 Project Structure
 
 ├── Dockerfile # Container with Chromium & dependencies
+
 ├── .dockerignore # Excludes local session data from image
+
 ├── .gitignore # Prevents committing node_modules & sessions
+
 ├── index.js # Main bot logic
+
 ├── package.json # Dependencies & npm scripts
+
 └── README.md # You are here!
 
 
@@ -60,6 +66,8 @@
 git clone https://github.com/yourusername/whatsapp-session-keeper.git
 cd whatsapp-session-keeper
 npm install
+
+
 
 Create a .env file (never commit it!):
 
