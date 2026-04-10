@@ -62,7 +62,6 @@
 
 ### 2. Local Setup (Optional)
 
-```bash
 git clone https://github.com/yourusername/whatsapp-session-keeper.git
 
 cd whatsapp-session-keeper
