@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-session-keeper",
+  "version": "1.0.0",
+  "description": "Persistent WhatsApp Web session with QR delivery via Telegram",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode": "^1.5.3",
+    "axios": "^1.6.7",
+    "form-data": "^4.0.0"
+  },
+  "resolutions": {
+    "puppeteer": "npm:puppeteer-core@22.15.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "web",
+    "bot",
+    "session",
+    "telegram",
+    "qr",
+    "persistent"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
